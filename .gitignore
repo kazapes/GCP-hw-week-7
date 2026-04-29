@@ -37,4 +37,15 @@ override.tf.json
 terraform.rc
 
 # Ignore keys
-*.json 
+*.json .terraform/
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl
+.terraform/
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl
+.terraform/
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl
