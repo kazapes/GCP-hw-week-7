@@ -2,12 +2,12 @@
 #before terraform init, because Terraform cannot use a backend that does not already exist.
 
 # https://www.terraform.io/language/settings/backends/gcs
-terraform {
-  backend "gcs" {
-    bucket = "sundaymorning0502025"
-    prefix = "terraform/state"
-  }
-}
+# terraform {
+#   backend "gcs" {
+#     bucket = "kazapes1-terraform-state"
+#     prefix = "terraform/state"
+#   }
+# }
 
 
 resource "google_compute_disk" "grafana_disk" {

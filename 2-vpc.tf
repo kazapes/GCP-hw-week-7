@@ -8,22 +8,3 @@ resource "google_compute_network" "main" {
   mtu                             = 1460
   delete_default_routes_on_create = false
 }
-
-resource "google_compute_network" "backup" {
-  name                            = "backup"
-  routing_mode                    = "REGIONAL"
-  auto_create_subnetworks         = false
-  mtu                             = 1460
-  delete_default_routes_on_create = false
-}
-
-
-# resource "google_compute_network" "final" {
-#   name                            = "final"
-#   routing_mode                    = "REGIONAL"
-#   auto_create_subnetworks         = false
-#   mtu                             = 1460
-#   delete_default_routes_on_create = false
-
-# }
-
